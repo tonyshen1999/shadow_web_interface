@@ -1,1 +1,87 @@
-<p>scn-info works!</p>
+<app-header></app-header>
+
+
+
+<body>
+    <div class="container">
+
+        <h1 class="text-center">Scenario {{id$ | async}}, </h1>
+
+
+        <hr>
+
+        <h3>Scenario Comments</h3>
+        <p contenteditable="true" class="lead">Basic grid layouts to get you familiar with building within the Bootstrap
+            grid system.</p>
+
+        <hr>
+
+        <h3>Scenario Attributes:</h3>
+        <!-- <div class = "container">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">Last Updated</span>
+                </div>
+                <input disabled type="text" class="form-control" value="12-12-22" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+              
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2">@example.com</span>
+                </div>
+              </div>
+              
+              <label for="basic-url">Your vanity URL</label>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                </div>
+                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+              </div>
+              
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">$</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <div class="input-group-append">
+                  <span class="input-group-text">.00</span>
+                </div>
+              </div>
+        </div> -->
+        
+          
+
+        <hr>
+
+        <h3>Entities</h3>
+
+        <table class="table">
+            <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Type</th>
+                  <th>Parent</th>
+                  <th>Data</th>
+                </tr>
+              </thead>
+              <tbody>
+
+                <tr>
+                    <td>Enron</td>
+                    <td>USSH</td>
+                    <td>N/A</td>
+                    <td><button class= "btn btn-light">View</button></td>
+                </tr>
+                <tr>
+                    <td>Lehman Brothers</td>
+                    <td>CFC</td>
+                    <td>Enron</td>
+                    <td><button class= "btn btn-light">View</button></td>
+                </tr>
+              </tbody>
+        </table>
+
+    </div> <!-- /container -->
+</body>

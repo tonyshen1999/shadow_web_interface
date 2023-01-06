@@ -11,6 +11,7 @@ import { ConfigPanelComponent } from './config-panel/config-panel.component';
 import { SettingsComponent } from './settings/settings.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './header/header.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HeaderComponent } from './header/header.component';
     TblEditorComponent,
     ConfigPanelComponent,
     SettingsComponent,
-    HeaderComponent
+    HeaderComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import {ScnListService} from './scn-list.service';
 import {ScenarioLine} from './scn-list.service';
+import { RouterModule, Routes } from '@angular/router';
+
 @Component({
   selector: 'app-scn-list',
   templateUrl: './scn-list.component.html',
