@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import { EntityComponent } from '../entity/entity.component';
+import { EntityService } from '../entity/entity.service';
 
 @Injectable({
   providedIn: 'root'
@@ -12,8 +14,8 @@ export class ScnListService {
   constructor() { 
     this.title = "Scenario List";
     this.scenarios=[ 
-      {id: 100,scnName: 'High Tax Election', scnDate: "12-2-22", scnDescription: "This is pretty cool yo", version:1 },
-      {id:102,scnName: 'Non High Tax Election', scnDate: "12-2-22", scnDescription: "Yessur pretty cool yo", version:1 }
+      new ScenarioLine(100,'High Tax Election', "12-2-22","This is pretty cool yo",1),
+      new ScenarioLine(102,'Non High Tax Election', "12-2-22","This is pretty cool yo",1),
 
   ];
 
@@ -28,11 +30,15 @@ export class ScenarioLine{
   scnDescription:string;
   version:number;
   id:number
-  constructor(i:number,n:string,d:string,desc:string,v:number){
+  
+  constructor(i:number,n:string,d:string,desc:string,v:number, e:EntityService[]=[]){
     this.id = i;
     this.scnName=n;
     this.scnDate=d;
     this.scnDescription=desc;
     this.version = v;
+    
   }
+
+
 }

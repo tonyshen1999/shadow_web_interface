@@ -12,6 +12,9 @@ import { SettingsComponent } from './settings/settings.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './header/header.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { EntityComponent } from './entity/entity.component';
+import { EntityDataComponent } from './entity-data/entity-data.component';
+import { EntityAccountsComponent } from './entity-accounts/entity-accounts.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { NotFoundComponent } from './not-found/not-found.component';
     ConfigPanelComponent,
     SettingsComponent,
     HeaderComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    EntityComponent,
+    EntityDataComponent,
+    EntityAccountsComponent
   ],
   imports: [
     BrowserModule,
