@@ -1,0 +1,21 @@
+<app-header></app-header>
+<h1 class="text-center">{{title}}</h1>
+
+<div class = "container">
+    <table class="table">
+        <thead>
+            <tr>
+              <th *ngFor="let h of headers">{{h}}</th>
+            </tr>
+          </thead>
+          <tbody *ngFor="let s of scenarios">
+            <tr>
+              <td>{{s.scnName}}</td>
+              <td>{{s.scnDate}}</td>
+              <td>{{s.version}}</td>
+              <td>{{s.scnDescription}}</td>
+              <td><button class = "btn btn-light">Export</button></td>
+            </tr>
+          </tbody>
+    </table>
+</div>
