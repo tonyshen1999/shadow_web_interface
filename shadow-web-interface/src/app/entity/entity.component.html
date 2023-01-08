@@ -1,1 +1,42 @@
-<p>entity works!</p>
+
+
+<body>
+    <app-header></app-header>
+    <div class="container">
+
+        <h1 class="text-center">Entity: {{id$ | async}} </h1>
+        <hr>
+        <h3>Entity Attributes:</h3>
+
+        
+        <hr>
+
+
+
+ 
+
+        <app-entity-data></app-entity-data>
+
+        <!-- <table class="table">
+            <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Type</th>
+                  <th>Parents</th>
+                  <th>Data</th>
+                </tr>
+              </thead>
+              <tbody *ngFor="let e of entityList">
+
+                <tr>
+                    <td>{{e.name}}</td>
+                    <td>{{e.type}}</td>
+                    <td>{{e.parentString}}</td>
+                    <td><button class= "btn btn-light"[routerLink]="['/entity/',e.name]">View</button></td>
+                </tr>
+                
+              </tbody>
+        </table> -->
+
+    </div> <!-- /container -->
+</body>

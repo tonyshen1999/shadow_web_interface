@@ -7,6 +7,7 @@ import { SettingsComponent } from './settings/settings.component';
 import { ConfigPanelComponent } from './config-panel/config-panel.component';
 import { TblEditorComponent } from './tbl-editor/tbl-editor.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { EntityComponent } from './entity/entity.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/scn-list', pathMatch: 'full'},
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'settings', component: SettingsComponent },
   { path: 'config-panel', component: ConfigPanelComponent },
   { path: 'table-editor', component: TblEditorComponent},
+  { path: 'entity/:entity', component: EntityComponent},
   { path: '**', component: NotFoundComponent }
 ];
 

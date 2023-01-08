@@ -31,13 +31,13 @@
                   <th>Data</th>
                 </tr>
               </thead>
-              <tbody *ngFor="let s of entityList">
+              <tbody *ngFor="let e of entityList">
 
                 <tr>
-                    <td>{{s.name}}</td>
-                    <td>{{s.type}}</td>
-                    <td>{{s.parentString}}</td>
-                    <td><button class= "btn btn-light">View</button></td>
+                    <td>{{e.name}}</td>
+                    <td>{{e.type}}</td>
+                    <td>{{e.parentString}}</td>
+                    <td><button class= "btn btn-light"[routerLink]="['/entity/',e.name]">View</button></td>
                 </tr>
                 
               </tbody>
